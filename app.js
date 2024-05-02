@@ -17,7 +17,7 @@ app.use(express.json({limit : '20mb'}));
 app.use(express.urlencoded({extended : true}));
 
 
-const limiter = rateLimit({windowMs: 15 * 60 * 1000, max:3000});
+const limiter = rateLimit({windowMs: 15 * 60 * 1000, max:25000});
 app.use(limiter);
  
 // let mongodbUrl = 'mongodb://localhost:27017/ostadFoodCurdApp';
