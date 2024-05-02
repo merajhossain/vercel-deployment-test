@@ -4,6 +4,7 @@ const FoodsController = require("../controllers/FoodsController");
 const router = express.Router();
 
 //registration
+router.get("/", FoodsController.Testing);
 router.post("/create-food-item", FoodsController.CreateFoodItem);
 router.get("/all-foods", FoodsController.GetAllFoodItems);
 router.get("/get-single-food/:id",FoodsController.GetSingleFood);
