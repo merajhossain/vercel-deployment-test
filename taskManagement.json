@@ -1,0 +1,25 @@
+{
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
+  },
+  "connections": [
+    {
+      "id": "2a6cb98b-7f8f-45e0-961e-2e8b459c34ca",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1710263809943"
+        }
+      },
+      "favorite": {
+        "name": "taskManagement"
+      },
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {
+          "serializedState": "eyJvaWRjUGx1Z2luU3RhdGVWZXJzaW9uIjowLCJzdGF0ZSI6W119"
+        }
+      }
+    }
+  ]
+}
