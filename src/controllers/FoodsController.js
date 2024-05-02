@@ -1,13 +1,5 @@
 const foodModel = require("../models/foodModel");
 
-exports.AppCheck = async (req, res) => {
-    try{
-        res.json({status:"success",message:"App Connect Successfully"})
-
-    }catch (err) {
-        res.json({status:"fail",message:err})
-    }
-}
 exports.CreateFoodItem = async (req, res) => {
     try{
         let reqBody = req.body;
