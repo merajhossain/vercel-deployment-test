@@ -11,15 +11,6 @@ exports.CreateFoodItem = async (req, res) => {
     }
 }
 
-exports.Testing =async (req, res) => {
-    try{
-        // let data=await foodModel.find({});
-        res.json({status:"success",data:"this is testing data"})
-    }catch (err) {
-        res.json({status:"fail",message:err})
-    }
-}
-
 exports.GetAllFoodItems =async (req, res) => {
     try{
         let data=await foodModel.find({});
