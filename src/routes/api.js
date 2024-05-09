@@ -8,6 +8,6 @@ router.post("/create-food-item", FoodsController.CreateFoodItem);
 router.get("/all-foods", FoodsController.GetAllFoodItems);
 router.get("/get-single-food/:id",FoodsController.GetSingleFood);
 router.put("/food-item-update/:id",FoodsController.UpdateFoodItem);
-router.delete("/food-item-delete/:id",FoodsController.UpdateFoodItem);
+router.delete("/food-item-delete/:id",FoodsController.DeleteFoodItem);
 
 module.exports = router;
