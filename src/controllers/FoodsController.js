@@ -40,3 +40,13 @@ exports.UpdateFoodItem =async (req, res) => {
         res.json({status:"fail",message:err})
     }
 }
+
+exports.DeleteFoodItem =async (req, res) => {
+    try{
+        let {id}=req.params;
+        await foodModel.deleteOne({_id:id});
+        res.json({status:"success", message:"Delete Completed"})
+    }catch (err) {
+        res.json({status:"fail",message:err})
+    }
+}
